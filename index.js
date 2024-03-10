@@ -13,7 +13,8 @@ app.use(express.json());
 app.use(cors({
     origin: '*',
     methods: ['GET', 'POST'], // Allow specific HTTP methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
+    allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token'], // Include x-auth-token in allowed headers
+    // Allow specific headers
 }));
 
 app.use(authRouter)
