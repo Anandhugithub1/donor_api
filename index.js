@@ -11,7 +11,7 @@ const donerRouter =require('./routes/donor')
 const app =express();
 app.use(express.json());
 app.use(cors({
-    origin: '*', // Allow requests from any origin
+    origin: '*.up.railway.app', // Allow requests from any origin
     methods: ['GET', 'POST'], // Allow specific HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
 }));
