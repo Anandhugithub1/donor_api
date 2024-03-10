@@ -10,7 +10,7 @@ const cors = require('cors');
 const app =express();
 app.use(express.json())
 app.use(cors({
-    origin: 'https://donorapi-production.up.railway.app',
+    origin: '*',
     methods: ['GET', 'POST'], // Allow specific HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'], // Allow specific headers
   }));
