@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://anandhu2a2256:anandhu123@cluster0.vuqaskm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 
-const connect = async () => {
+const connect = async (uri) => {
     try {
         console.log('Connecting to the database...');
         await mongoose.connect(uri);
